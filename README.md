@@ -2,7 +2,6 @@
 
 Check whether the mounted filesystem readable or writable with help of file creation.
 
----
 
 ```{r, engine='bash'}
 $ python check_ro.py --help
