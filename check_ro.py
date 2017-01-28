@@ -35,7 +35,7 @@ def check(filename):
             has_error = True
 
             if err.errno == errno.EROFS:
-                print('{0} is read-only file system'.format(fs))
+                print('{0} is read-only filesystem'.format(fs))
             else:
                 print('Unexpected error: {0}'.format(err))
         else:
@@ -47,10 +47,10 @@ def check(filename):
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Check whether the mounted partition readable or writable'
+        description='Check whether the mounted filesystem readable or writable'
     )
     parser.add_argument('-f', '--file',
-        help='File with mounted partitions to check. If not specified, ' \
+        help='File with mounted filesystems to check. If not specified, ' \
             '/proc/mounts will be used'
     )
 

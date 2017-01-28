@@ -1,4 +1,19 @@
-# CHECK RO MOUNT PARTITION
-This script checks the state of the mounted partition on read-only with the help of file creation.
-List paths the script takes the file `/proc/mounts` or similar files.
-The file path is variable *FILE_MOUNTS*.
+# CHECK RO MOUNT FILE SYSTEM
+
+Check whether the mounted filesystem readable or writable with help of file creation.
+
+---
+
+```{r, engine='bash'}
+$ python check_ro.py --help
+
+usage: check_ro.py [-h] [-f FILE]
+
+Check whether the mounted filesystem readable or writable
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -f FILE, --file FILE  File with mounted filesystems to check. If not
+                        specified, /proc/mounts will be used
+```
+
